@@ -26,6 +26,6 @@ stages:
         goals: 'clean package'
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '/'
+        PathtoPublish: '$(Build.SourcesDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
